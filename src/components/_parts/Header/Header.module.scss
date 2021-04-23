@@ -1,0 +1,29 @@
+.page_header {
+  background: #4b6ee8;
+  height: 100px;
+  width: 100%;
+  &_content {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 35px 0 80px;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100%;
+  }
+  &_content span {
+    font-size: 20px;
+  }
+  &_content_end {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  &_content_end p {
+    margin: 0 25px 0 0;
+    color: #fff;
+    font-size: 18px;
+  }
+}
+.doc_time {
+  color: #fff;
+}

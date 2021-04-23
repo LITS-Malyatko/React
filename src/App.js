@@ -1,25 +1,50 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useEffect} from "react";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+import LoginPage from "./components/LoginPage";
+import Page404 from "./components/Page404";
+import Home from "./components/Home";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Router>
+        <div>
+          {/* temp nav menu*/}
+          <nav>
+            <ul style={{display: "flex"}}>
+              <li style={{marginRight: "10px"}}>
+                <Link to="/">Home</Link>
+              </li>
+              <li style={{marginRight: "10px"}}>
+                <Link to="/login">Login</Link>
+              </li>
+              <li style={{marginRight: "10px"}}>
+                <Link to="/w">empty page</Link>
+              </li>
+            </ul>
+          </nav>
+
+          {/* A <Switch> looks through its children <Route>s and
+            renders the first one that matches the current URL. */}
+          <Switch>
+            <Route path="/login">
+              <LoginPage />
+            </Route>
+          <Route exact path="/">
+            <Home />
+          </Route>
+            <Route>
+              <Page404 />
+            </Route>
+
+        </Switch>
+        </div>
+      </Router>
+    </>
   );
 }
-
-export default App;
