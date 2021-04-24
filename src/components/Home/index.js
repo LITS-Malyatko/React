@@ -1,4 +1,4 @@
-import style from './Home.module.scss';
+// import style from './Home.module.scss';
 import Header from "../_parts/Header";
 import Footer from "../_parts/Footer";
 

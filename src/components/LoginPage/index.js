@@ -1,4 +1,4 @@
-import style from './LoginPage.module.scss';
+// import style from './LoginPage.module.scss';
 
 function LoginPage() {
   return (

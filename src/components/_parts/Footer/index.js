@@ -1,6 +1,5 @@
 import style from './Footer.module.scss';
 import logo from "../../_assets/logo.svg";
-import logoCustomer from "../../_assets/userLogo.svg";
 import {Link} from "react-router-dom";
 
 function Footer() {
