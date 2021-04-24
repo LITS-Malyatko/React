@@ -15,7 +15,7 @@ function Header() {
           <span className={style["doc_time"]}><Clock/></span>
           <div className={style["page_header_content_end"]}>
             <p>Вітаємо Оксана Дмитрівна</p>
-            <img className ={style[ "page_header_content_end_parents_logo"]} src= {logoCustomer} />
+            <img className ={style[ "page_header_content_end_parents_logo"]} src= {logoCustomer}  alt='logo'/>
           </div>
         </div>
       </div>
