@@ -2,6 +2,16 @@
   height: 100px;
   width: 100%;
   background: #4b6ee8;
+  ::-moz-selection { /* Code for Firefox */
+    color: #00326d;
+    background: white;
+  }
+
+  ::selection {
+    color: #00326d;
+    background: white;
+  }
+
   &_content {
     display: flex;
     justify-content: space-between;
