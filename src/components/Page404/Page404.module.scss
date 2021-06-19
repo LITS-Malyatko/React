@@ -1,0 +1,53 @@
+@import "../mixin/variables.scss";
+@import "../mixin/fonts.scss";
+
+.page404 {
+    width: 100vw;
+    height: 100vh;
+    background-color: $white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__header {
+        @include montserrat-400;
+        font-size: 16rem;
+        line-height: 16rem;
+        color: $blue;
+        position: relative;
+
+        &::before, &::after {
+            position: absolute;
+            width: 22rem;
+            border-bottom: 1px solid $blue;
+            content: "";
+            top: 50%;       
+        }
+
+        &::before {
+            left: -100%;
+        }
+
+        &::after {
+            right: -100%;
+        }
+    }
+
+    &__description {
+        margin-top: 7rem;
+        @include montserrat-400;
+        font-size: 5rem;
+        line-height: 5rem;
+        color: $dark-grey;
+    }
+
+    &__to-home-link {
+        margin-top: 4rem;
+        @include montserrat-400;
+        font-size: 4rem;
+        line-height: 4rem;
+        color: $dark-grey;
+        text-decoration: underline;
+    }
+}

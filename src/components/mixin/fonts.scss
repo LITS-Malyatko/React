@@ -1,0 +1,48 @@
+@mixin montserrat {
+    font-family: "Montserrat", sans-serif;
+}
+
+@mixin montserrat-100 {
+    @include montserrat;
+    font-weight: 100;
+}
+
+@mixin montserrat-200 {
+    @include montserrat;
+    font-weight: 200;
+}
+
+@mixin montserrat-300 {
+    @include montserrat;
+    font-weight: 300;
+}
+
+@mixin montserrat-400 {
+    @include montserrat;
+    font-weight: 400;
+}
+
+@mixin montserrat-500 {
+    @include montserrat;
+    font-weight: 500;
+}
+
+@mixin montserrat-600 {
+    @include montserrat;
+    font-weight: 600;
+}
+
+@mixin montserrat-700 {
+    @include montserrat;
+    font-weight: 700;
+}
+
+@mixin montserrat-800 {
+    @include montserrat;
+    font-weight: 800;
+}
+
+@mixin montserrat-900 {
+    @include montserrat;
+    font-weight: 900;
+}

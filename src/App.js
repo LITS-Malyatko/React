@@ -13,10 +13,10 @@ export default function App() {
   return (
     <>
       <Router>
-        <div>
+        <div style={{position: "relative", marginTop: "60px"}}>
           {/* temp nav menu*/}
-          <nav>
-            <ul style={{display: "flex"}}>
+          <nav style={{position: "absolute", backgroundColor: "#656565", width: "100%", height: "60px", top: "-60px"}}>
+            <ul style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
               <li style={{marginRight: "10px"}}>
                 <Link to="/">Home</Link>
               </li>
