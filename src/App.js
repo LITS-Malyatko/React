@@ -8,6 +8,7 @@ import {
 import LoginPage from "./components/LoginPage";
 import Page404 from "./components/Page404";
 import Home from "./components/Home";
+import RegistrationPage from "./components/RegistrationPage";
 
 export default function App() {
   return (
@@ -24,6 +25,9 @@ export default function App() {
                 <Link to="/login">Login</Link>
               </li>
               <li style={{marginRight: "10px"}}>
+                <Link to="/registration">Registration</Link>
+              </li>
+              <li style={{marginRight: "10px"}}>
                 <Link to="/w">empty page</Link>
               </li>
             </ul>
@@ -32,8 +36,11 @@ export default function App() {
           {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
           <Switch>
-            <Route path="/login">
+            <Route exact path="/login">
               <LoginPage />
+            </Route>
+            <Route exact path="/registration">
+              <RegistrationPage />
             </Route>
           <Route exact path="/">
             <Home />
