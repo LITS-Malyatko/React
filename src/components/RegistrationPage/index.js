@@ -1,7 +1,7 @@
 // import style from "./RegistrationPage.module.scss";
 
 const RegistrationPage = () => {
-  return <>Registration</>
+  return <>It's registration page</>
 };
 
 export default RegistrationPage;
